@@ -11,6 +11,7 @@ body {
     background: linear-gradient(var(--orange), var(--white));
     color: var(--blue);
     font-size: 24px;
+    font-family: FreeMono;
 }
 
 main {
