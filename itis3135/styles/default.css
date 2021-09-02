@@ -1,0 +1,57 @@
+:root {
+    --orange: #ffb319;
+    --yellow: #ffe194;
+    --white: #e8f6ef;
+    --green: #b8dfd8;
+    --blue: #64c9cf;
+}
+
+
+body {
+    background: linear-gradient(var(--orange), var(--white));
+    color: var(--blue);
+    font-size: 24px;
+}
+
+main {
+    background: linear-gradient(var(--white), var(--yellow));
+    padding: 10px 0;
+    border-radius: 25px;
+}
+
+footer {
+    padding-top: 10px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    padding: 5px;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.orange-border {
+    border: solid var(--orange) 10px;
+    border-radius: 25px;
+}
+
+#aboutMe {
+    margin: auto;
+    width: 50em;
+}
+
+#top-nav {
+    margin-bottom: 10px;
+}
+
+#profile-pic {
+    border-radius: 10px;
+}
+
