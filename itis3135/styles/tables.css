@@ -9,14 +9,11 @@
 table {
     border-collapse: collapse;
     color: var(--blue);
-}
-
-thead {
-    background: var(--orange);
+    margin: 20px;
 }
 
 th {
-    background: var(--orange);
+    background-color: var(--orange);
     color: var(--white);
 }
 
@@ -31,12 +28,12 @@ th, td {
     vertical-align: middle;
 }
 
-.rightText {
-    text-align: right;
-}
-
 tbody tr:nth-child(odd) td {
     background-color: var(--yellow);
+}
+
+.rightText {
+    text-align: right;
 }
 
 #tableData {
