@@ -1,0 +1,45 @@
+:root {
+    --orange: #ffb319;
+    --yellow: #ffe194;
+    --white: #e8f6ef;
+    --green: #b8dfd8;
+    --blue: #64c9cf;
+}
+
+table {
+    border-collapse: collapse;
+    color: var(--blue);
+}
+
+thead {
+    background: var(--orange);
+}
+
+th {
+    background: var(--orange);
+    color: var(--white);
+}
+
+td {
+    background-color: var(--white);
+}
+
+th, td {
+    border: 1px solid var(--blue);
+    padding: .2em 1em .2em .5em;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.rightText {
+    text-align: right;
+}
+
+tbody tr:nth-child(odd) td {
+    background-color: var(--yellow);
+}
+
+#tableData {
+    width: 725px;
+    margin: auto;
+}
