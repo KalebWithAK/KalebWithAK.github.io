@@ -1,0 +1,32 @@
+:root {
+    --orange: #ffb319;
+    --yellow: #ffe194;
+    --white: #e8f6ef;
+    --green: #b8dfd8;
+    --blue: #64c9cf;
+}
+
+main {
+    width: 750px;
+    margin: auto;
+}
+
+fieldset {
+    background-color: var(--blue);
+    color: var(--yellow);
+    width: 500px;
+    height: 150px;
+}
+
+legend {
+    color: black;
+}
+
+select {
+    width: 100px;
+}
+
+#button {
+    background-color: var(--blue);
+    color: var(--white);
+}
