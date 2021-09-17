@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            
+        </title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <style>
+            :root {
+                --white: #e8e9f3;
+                --red: #e03616;
+                --blue: #548687;
+                --black: #262635;
+                --purple: #662c91;
+            }
+
+            body {
+                background: linear-gradient(90deg, var(--white), var(--blue));
+                color: var(--black);
+            }
+
+            header, footer {
+                background: var(--white);
+                width: 100%;
+            }
+
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                font-family: Kanit;
+                font-size: 24px;
+                text-shadow: 3px 3px 3px var(--blue);
+            }
+
+            main {
+                background-color: var(--blue);
+                color: var(--white);
+                font-family: Roboto;
+                font-size: 20px;
+
+                display: grid;
+                grid-template-rows: repeat(4, auto);
+                grid-gap: 2em;
+            }
+
+            footer {
+                background-color: var(--white);
+            }
+
+            ul {
+                list-style-type: square;
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+            }
+
+            a {
+                color: var(--red);
+            }
+
+            a:hover {
+                color: var(--purple);
+            }
+
+            .centerText {
+                text-align: center;
+            }
+
+            .center {
+                width: 35em;
+                margin: auto;
+            }
+
+            #brandImg {
+                justify-self: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Kingly Dingo Design Group LLC</h1>
+            <img id="brandImg" src="images/dingo-dreamstime.jpg" alt="Dingo Logo">
+        </header>
+
+        <main>
+            <h2 class="centerText">Brand Page</h2>
+            
+            <article class="center">
+                <h3 class="centerText">Our Background</h3>
+                <p>
+                    Kingly Dingo Design LLC is an up and coming design company with plenty of elegant and creative designs.
+                    The company has been up and running since September of 2021 and has already completed plenty of contracts
+                    for very happy clients. Although we are new, our artists have plenty of experience from drawing comics to
+                    recreating pokemon cards.
+                </p>
+            </article>
+
+            <article>
+                <h3 class="centerText">Some Amazing Things About Us</h3>
+                <ul class="center">
+                    <li>you can choose your design's background color</li>
+                    <li>we will help you pick out a color palette</li>
+                    <li>design your web page</li>
+                    <li>design a template for your blog</li>
+                    <li>edit logo image files</li>
+                    <li>make designs fit any desired layout</li>
+                </ul>
+            </article>
+
+            <article class="center">
+            <h3 class="centerText">What We Do</h3>
+            <p>
+                At Kingly Dingo Design Group LLC, our primary focus is to design logos and
+                assets. We can also design an entire page or template for a website of various
+                different types. This includes landing pages, blogs, and company websites.
+                Make the elegant choice and make Kingly Dingo your one stop shop for all of
+                you design and branding needs!
+            </p>
+            </article>
+
+            <article class="center">
+                <h3 class="centerText">Contact Us</h3>
+                <p>Phone: (962)-435-1005</p>
+                <p>Email: <a href="">kinglydingodesign@kdd.com</a></p>
+                <p>Addess: 1677 Boardwalk Ave, Charlotte NC, 28260</p>
+            </article>
+        </main>
+
+        <footer class="centerText">
+            <nav>
+                <a href="https://webpages.uncc.edu/kdean15/private_html/itis3135/brand-kingly-dingo.html">Charlotte.edu</a>
+                 | 
+                <a href="https://https://KalebWithAK.github.io/private_html/itis3135/brand-kingly-dingo.html">Github Pages</a>
+            </nav>
+
+            <p style="font-family: Kanit">Page built by Kingly Dingo Design Group LLC</p>
+
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+            </a>
+        </footer>
+    </body>
+</html>
