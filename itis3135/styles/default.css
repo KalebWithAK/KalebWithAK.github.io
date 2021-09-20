@@ -24,12 +24,6 @@ footer {
     padding-top: 10px;
 }
 
-.centerElement {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 li {
     padding: 5px;
 }
@@ -45,6 +39,13 @@ a:visited {
 a:hover {
     color: #b26363;
 }
+
+.centerElement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .centerText {
     text-align: center;
