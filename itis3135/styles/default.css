@@ -34,6 +34,18 @@ li {
     padding: 5px;
 }
 
+a {
+    color: #511c29;
+}
+
+a:visited {
+    color: #511c29;
+}
+
+a:hover {
+    color: #b26363;
+}
+
 .centerText {
     text-align: center;
 }
