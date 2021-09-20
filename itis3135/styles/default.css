@@ -3,7 +3,7 @@
     --yellow: #ffe194;
     --white: #e8f6ef;
     --green: #b8dfd8;
-    --blue: #64c9cf;
+    --blue: #456990;
 }
 
 
@@ -12,12 +12,6 @@ body {
     color: var(--blue);
     font-size: 24px;
     font-family: Roboto;
-}
-
-header {
-    position: sticky;
-    top: 0;
-    right: 0;
 }
 
 main {
