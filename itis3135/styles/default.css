@@ -54,17 +54,3 @@ a:hover {
     border: solid var(--orange) 10px;
     border-radius: 25px;
 }
-
-#aboutMe {
-    margin: auto;
-    width: 50em;
-}
-
-#top-nav {
-    margin-bottom: 10px;
-}
-
-#profile-pic {
-    border-radius: 10px;
-}
-
