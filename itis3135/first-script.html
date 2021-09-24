@@ -38,7 +38,7 @@
                 <article class="centerElement">
                     <h3>Multiplication</h3>
                     <p>Enter two numbers and click Multiply.</p>
-                    <h4 id="text_multiplicationResult"></h4>
+                    <p id="text_multiplicationResult" class="result"></p>
                     <input id="input_multiplicationA" type="number" placeholder="number">
                     <input id="input_multiplicationB" type="number" placeholder="number"> 
                     <button onclick="multiplication()">Multiply</button>
@@ -48,7 +48,7 @@
                 <article class="centerElement">
                     <h3>Square Root</h3>
                     <p>Enter a number and click Square Root.</p>
-                    <h4 id="text_squareRootResult"></h4>
+                    <p id="text_squareRootResult" class="result"></p>
                     <input id="input_squareRoot" type="number" placeholder="number">
                     <button onclick="squareRoot()">Square Root</button>
                 </article>
@@ -59,7 +59,7 @@
                     <p class="centerText">Click on the - or + buttons to decrement or increment respectively.</p>
                     <div class="counter">
                         <button class="btnCounter" onclick="decrement()">-</button>
-                        <h4 id="text_counterResult">0</h4>
+                        <p id="text_counterResult" class="result">0</p>
                         <button class="btnCounter" onclick="increment()">+</button>
                     </div>
                 </article>
@@ -68,7 +68,7 @@
                 <article class="centerElement">
                     <h3>Where To Eat</h3>
                     <p class="centerText">Click the Pick a Restaurant button to get a randomly selected place to eat.</p>
-                    <h4 id="text_eatResult"></h4>
+                    <p id="text_eatResult"></p>
                     <button onclick="whereToEat()">Pick a Restaurant</button>
                 </article>
             </section>
@@ -76,7 +76,7 @@
             <article class="centerElement">
                 <h3>Net Pay</h3>
                 <p class="centerText">Enter a number for your gross pay, another number for the tax rate, and click calculate.</p>
-                <h4 id="text_netPayResult"></h4>
+                <p id="text_netPayResult"></p>
                 <input id="input_grossPay" type="number" placeholder="gross pay">
                 <input id="input_taxRate" type="number" placeholder="tax rate">
                 <button onclick="netPay()">Calculate</button>
