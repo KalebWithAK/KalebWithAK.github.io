@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Kaleb Dean, ITIS3135, Simple Web-based Interaction</title>
+        <link href="styles/default.css" rel="stylesheet" type="text/css">
+        <link href="styles/interaction.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 class="centerText">Kaleb Dean >> ITIS3135</h1>
+        </header>
+
+        <nav id="top-nav" class="centerText">
+            <a href="introduction.html">Introduction</a>
+            ||
+            <a href="">Contract</a>
+            ||
+            <a href="tables.html">Tables</a>
+            ||
+            <a href="forms.html">Forms</a>
+            ||
+            <a href="brand-kingly-dingo.html">Brand</a>
+            ||
+            <a href="website_evaluations.html">Website Evaluations</a>
+            ||
+            <a href="first-script.html">First Script</a>
+        </nav>
+
+        <main>
+            <h2 class="centerText">Simple Web-Based Interaction</h2>
+            <h3 class="centerText" id="dateTime"></h3>
+            <h3 class="centerText" id="welcomeUser"></h3>
+            <h3 class="centerText" id="userFeeling"></h3>
+            
+            <section>
+                <!-- multiplication -->
+                <article class="centerElement">
+                    <h3>Multiplication</h3>
+                    <p>Enter two numbers and click Multiply.</p>
+                    <h4 id="text_multiplicationResult"></h4>
+                    <input id="input_multiplicationA" type="number" placeholder="number">
+                    <input id="input_multiplicationB" type="number" placeholder="number"> 
+                    <button onclick="multiplication()">Multiply</button>
+                </article>
+
+                <!-- square root -->
+                <article class="centerElement">
+                    <h3>Square Root</h3>
+                    <p>Enter a number and click Square Root.</p>
+                    <h4 id="text_squareRootResult"></h4>
+                    <input id="input_squareRoot" type="number" placeholder="number">
+                    <button onclick="squareRoot()">Square Root</button>
+                </article>
+
+                <!-- counter -->
+                <article class="centerElement">
+                    <h3>Counter</h3>
+                    <p class="centerText">Click on the - or + buttons to decrement or increment respectively.</p>
+                    <div class="counter">
+                        <button class="btnCounter" onclick="decrement()">-</button>
+                        <h4 id="text_counterResult">0</h4>
+                        <button class="btnCounter" onclick="increment()">+</button>
+                    </div>
+                </article>
+
+                <!-- where to eat -->
+                <article class="centerElement">
+                    <h3>Where To Eat</h3>
+                    <p class="centerText">Click the Pick a Restaurant button to get a randomly selected place to eat.</p>
+                    <h4 id="text_eatResult"></h4>
+                    <button onclick="whereToEat()">Pick a Restaurant</button>
+                </article>
+            </section>
+            <!-- net pay -->
+            <article class="centerElement">
+                <h3>Net Pay</h3>
+                <p class="centerText">Enter a number for your gross pay, another number for the tax rate, and click calculate.</p>
+                <h4 id="text_netPayResult"></h4>
+                <input id="input_grossPay" type="number" placeholder="gross pay">
+                <input id="input_taxRate" type="number" placeholder="tax rate">
+                <button onclick="netPay()">Calculate</button>
+            </article>
+        </main>
+
+        <footer>
+            <nav class="centerText">
+                <a href="http://webpages.uncc.edu/kdean15" target="_blank">Charlotte.edu</a>
+                 | 
+                <a href="https://github.com/KalebWithAK" target="_blank">Github</a>
+                 | 
+                <a href="https://KalebWithAK.github.io" target="_blank">ITIS 3135 Github Pages</a>
+                 | 
+                <a href="https://www.codecademy.com/profiles/kdean15" target="_blank">Codecademy</a>
+                 | 
+                <a href="https://www.freecodecamp.org/kdean15" target="_blank">freeCodeCamp</a>
+                 | 
+                <a href="https://www.jsfiddle.net/users/kdean15" target="_blank">JSFiddle</a>
+                 | 
+                <a href="https://www.linkedin.com/in/kaleb-dean-1514b521b/" target="_blank">LinkedIn</a>
+                <br>
+
+                <p>Page built by Kaleb Dean</p>
+
+                <a href="https://validator.w3.org/check?uri=referer">
+                    <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+                </a>
+            </nav>
+        </footer>
+
+        <script src="scripts/simple_interaction.js"></script>
+    </body>
+</html>

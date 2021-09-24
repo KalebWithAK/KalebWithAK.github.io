@@ -1,0 +1,22 @@
+section {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+article {
+    width: 25em;
+    margin: auto;
+    margin-bottom: 5em;
+    margin-top: 5em;
+    border: 5px solid var(--orange);
+    border-radius: 15px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btnCounter {
+    width: 5em;
+}
