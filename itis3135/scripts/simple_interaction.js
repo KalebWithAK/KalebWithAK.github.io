@@ -4,18 +4,31 @@ function main()
     let userName = askUserName();
     let userFeeling = askUserFeeling();
 
-    document.getElementById("dateTime").innerText = `Today is ${ Date.now() }`;
-    document.getElementById("welcomeUser").innerText = `Hello ${ userName }, ${ companyName } welcomes you.`;
-    document.getElementById("userFeeling").innerText = `We are glad you are doing ${ userFeeling } today!`;
-
-    //document.getElementById("btn_multiply").addEventListener("click", multiplication);
+    document.getElementById("dateTime").innerHTML = `Today is ${ getDate() } and it is currently ${ getTime() }`;
+    document.getElementById("welcomeUser").innerHTML = `Hello ${ userName }, ${ companyName } welcomes you.`;
+    document.getElementById("userFeeling").innerHTML = `We are glad you are doing ${ userFeeling } today!`;
 }
 
+// return today's date
+function getDate() {
+    const today = new Date;
+
+    return today.toDateString();
+}
+
+// return current time
+function getTime() {
+    const rightNow = new Date;
+    return rightNow.toTimeString();
+}
+
+// prompt the user for their name and return the result
 function askUserName() 
 {
     return prompt("What is your name?");
 }
 
+// prompt the user for how they're doing and return the result
 function askUserFeeling() 
 {
     return prompt("How are you doing?");
@@ -89,8 +102,10 @@ function whereToEat()
 function netPay() {
     // get gross pay
     const grossPay = Number(document.getElementById("input_grossPay").value);
+
     // get tax rate
-    let taxRate = Number(document.getElementById("input_taxRate").value); 
+    let taxRate = Number(document.getElementById("input_taxRate").value);
+
     // if tax rate > 1, user is using % and code needs to adjust (for example 12% as opposed to .12)
     if (taxRate > 1) {
         taxRate /= 100;
