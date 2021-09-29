@@ -34,12 +34,14 @@ function validateEntry(entry)
         return -1;
     }
 
-    if (Math.abs(Math.floor(entry)) === 0 || Math.abs(Math.floor(entry)) > 10) {
+    const number = Math.abs(Math.floor(entry));
+
+    if (number === 0 || number > 10) {
         // error entry is outside of range (1 through 10)
         return -2;
     }
 
-    return Math.abs(Math.floor(entry));
+    return number;
 }
 
 main();

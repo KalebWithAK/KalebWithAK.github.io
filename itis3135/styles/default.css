@@ -28,16 +28,14 @@ li {
     padding: 5px;
 }
 
-a {
+a, a:visited {
     color: #511c29;
-}
-
-a:visited {
-    color: #511c29;
+    text-decoration: none;
 }
 
 a:hover {
     color: #b26363;
+    text-decoration: underline;
 }
 
 .centerElement {
