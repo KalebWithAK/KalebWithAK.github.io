@@ -5,7 +5,9 @@ let calculation = [];
 // add digits to current number
 function appendDigit(digit)
 {
-    if (text_output.innerHTML.includes(".") && digit === ".")
+    const calculation = text_output.innerHTML.split(" ");
+
+    if (calculation[calculation.length - 1].includes(".") && digit === ".")
     {
         return;
     }
