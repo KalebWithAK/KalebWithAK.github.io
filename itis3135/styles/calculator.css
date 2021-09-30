@@ -11,7 +11,7 @@ button {
 .calculator {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-rows: 3em, 4fr;
+    grid-template-rows: 3em 4fr;
     gap: 1em;
     background-color: var(--green);
     border-radius: 25px;
