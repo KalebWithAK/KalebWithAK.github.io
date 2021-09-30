@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Kaleb Dean, ITIS3135, Name the Polygon</title>
+        <title>Kaleb Dean, ITIS3135, Calculator</title>
         <link href="./styles/default.css" rel="stylesheet" type="text/css">
-        <link href="./styles/interaction.css" rel="stylesheet" type="text/css">
+        <link href="./styles/calculator.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -27,15 +27,44 @@
             <a href="first-script.html">First Script</a>
             ||
             <a href="name-polygon.html">Name the Polygon</a>
+            ||
+            <a href="calculator-try.html">Calculator</a>
         </nav>
 
-        <main style="height: 20em;">
-            <h2 class="centerText">Name the Polygon</h2>
+        <main class="centerElement">
+            <h2>Calculator</h2>
+
+            <section class="calculator">
+                <h3 id="text-output" class="centerText">.</h3>
+                <div class="numberContainer">
+                    <button onclick="appendDigit('7')">7</button>
+                    <button onclick="appendDigit('8')">8</button>
+                    <button onclick="appendDigit('9')">9</button>
+                    <button onclick="appendDigit('4')">4</button>
+                    <button onclick="appendDigit('5')">5</button>
+                    <button onclick="appendDigit('6')">6</button>
+                    <button onclick="appendDigit('1')">1</button>
+                    <button onclick="appendDigit('2')">2</button>
+                    <button onclick="appendDigit('3')">3</button>
+                    <button onclick="appendDigit('0')">0</button>
+                    <button onclick="appendDigit('.')">.</button>
+                </div>
+                <div class="operatorContainer">
+                    <button onclick="getOperation('/')">/</button>
+                    <button onclick="clearOutput()">C</button>
+                    <button onclick="getOperation('*')">*</button>
+                    <span></span>
+                    <button onclick="getOperation('-')">-</button>
+                    <span></span>
+                    <button onclick="getOperation('+')">+</button>
+                    <button onclick="getResult()">=</button>
+                </div>
+            </section>
         </main>
 
         <footer>
             <nav class="centerText">
-                <a href="http://webpages.uncc.edu/kdean15/itis3135/name-polygon.html" target="_blank">Charlotte.edu</a>
+                <a href="http://webpages.uncc.edu/kdean15/itis3135/calculator-try.html" target="_blank">Charlotte.edu</a>
                  | 
                 <a href="https://github.com/KalebWithAK" target="_blank">Github</a>
                  | 
@@ -61,6 +90,6 @@
             </nav>
         </footer>
 
-        <script src="./scripts/name_polygon.js"></script>
+        <script src="./scripts/calculator_try.js"></script>
     </body>
 </html>
