@@ -1,12 +1,20 @@
 // h3 showing output of numbers, operations, and calculations
 const text_output = document.querySelector("#text-output");
 let calculation = [];
+let equals = false;
 
 // add digits to current number
 function appendDigit(digit)
 {
+    if (equals)
+    {
+        clearOutput();
+        equals = false;
+    }
+
     const calculation = text_output.innerHTML.split(" ");
 
+    // if current number has a '.', don't do anything
     if (calculation[calculation.length - 1].includes(".") && digit === ".")
     {
         return;
@@ -20,6 +28,7 @@ function getOperation(operation)
 {
     const calculation = text_output.innerHTML.split(" ");
     
+    console.log(calculation);
     if (calculation.length === 3)
     {
         getResult();
@@ -41,8 +50,12 @@ function getOperation(operation)
 }
 
 // get numbers, operation, and result
-function getResult()
+function getResult(btn_equals)
 {
+    if (btn_equals)
+    {
+        equals = true;
+    }
     const calculation = text_output.innerHTML.split(" ");
 
     // make sure there's a second value
