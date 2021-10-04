@@ -1,5 +1,6 @@
 main {
     padding-bottom: 2em;
+    font-size: 24px;
 }
 
 form {
@@ -26,7 +27,18 @@ button, #btn_add {
     height: 2em;
     border-radius: 5px;
     color: var(--white);
-    background-color: var(--blue)
+    background-color: var(--blue);
+    font-size: 20px;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0.5em;
+}
+
+.inputs > input, select {
+    width: 10em;
 }
 
 .buttonContainer {

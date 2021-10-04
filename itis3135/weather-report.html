@@ -37,16 +37,20 @@
             <h2 class="centerText">Weather Report</h2>
 
             <form>
-                <label class="marginLeft" for="select_day">Day <select id="select_day">
-                    <option value="Sunday">Sunday</option>
-                    <option value="Monday">Monday</option>
-                    <option value="Tuesday">Tuesday</option>
-                    <option value="Wednesday">Wednesday</option>
-                    <option value="Thursday">Thursday</option>
-                    <option value="Friday">Friday</option>
-                    <option value="Saturday">Saturday</option>
-                </select></label>
-                <label class="marginLeft" for="text_temperature">Temperature <input id="text_temperature" type="number"></label>
+                <div class="inputs">
+                    <label class="centerText" for="select_day">Day</label>
+                        <select id="select_day">
+                            <option value="Sunday">Sunday</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                        </select>
+                    <label class="centerText" for="text_temperature">Temperature</label>
+                    <input id="text_temperature" type="number" size="10">
+                </div>
                 <input id="btn_add" type="button" onclick="add_temperature()" value="Add Temperature">
             </form>
 
