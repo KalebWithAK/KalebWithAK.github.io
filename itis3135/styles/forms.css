@@ -3,6 +3,10 @@ main {
     margin: auto;
 }
 
+label {
+    text-align: right;
+}
+
 fieldset {
     background-color: var(--blue);
     color: var(--yellow);
@@ -16,6 +20,13 @@ legend {
 
 select {
     width: 100px;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    padding-right: 5em;
 }
 
 #button {

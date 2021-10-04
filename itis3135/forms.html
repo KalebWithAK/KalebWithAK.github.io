@@ -39,9 +39,14 @@
             
             <main>
             <form class="centerElement" action="#">
-                <label for="name">Name <input id="name" type="text" required></label>
-                <label for="email">Email <input id="email" type="email" placeholder="example@mail.com" required></label>
-                <label for="phone">Phone <input id="phone" type="tel" maxlength="10"></label>
+                <div class="inputs">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" size="20" required>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="example@mail.com" size="20"required>
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="tel" size="20" maxlength="10">
+                </div>
 
                 <fieldset>
                     <legend>How often would you like to recieve news?</legend>
