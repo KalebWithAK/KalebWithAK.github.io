@@ -1,5 +1,5 @@
-let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday'];
-let temperatures = [66, 85, 72, 85, 74, 69, 72, 99];
+let days = []; //['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday'];
+let temperatures = []; //[66, 85, 72, 85, 74, 69, 72, 99];
 
 function valid_day(day)
 {
