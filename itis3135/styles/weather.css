@@ -23,7 +23,7 @@ table {
 }
 
 button, #btn_add {
-    width: 10em;
+    width: 9.25em;
     height: 2em;
     border-radius: 5px;
     color: var(--white);

@@ -1,5 +1,7 @@
 let days = []; //['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday'];
 let temperatures = []; //[66, 85, 72, 85, 74, 69, 72, 99];
+let results_shown = false;
+let temperatures_shown = false;
 
 function valid_day(day)
 {
@@ -33,13 +35,57 @@ function add_temperature()
         days.push(new_day);
         temperatures.push(parseInt(new_temperature));
     }
+
+    if (results_shown)
+    {
+        display_results();
+    }
+
+    if (temperatures_shown)
+    {
+        display_temperatures();
+    }
+}
+
+function display_temperatures()
+{
+    temperatures_shown = true;
+    const table = document.getElementById('temperature_table');
+
+    if (days.length > 0 && temperatures.length > 0)
+    {
+        if (temperatures_shown)
+        {
+            table.innerHTML = `
+                <tr>
+                    <th>Day</th>
+                    <th>Temperature</th>
+                </tr>
+            `;
+
+            for (let i = 0; i < days.length; i++)
+            {
+                table.innerHTML += `
+                    <tr>
+                        <td>${ days[i] }</td>
+                        <td class="rightText">${ temperatures[i] }</td>
+                    </tr>
+                `;
+            }
+        }
+        else
+        {
+            table.innerHTML = '';
+        }
+    }
 }
 
 function display_results()
 {
+    results_shown = true;
     const div_results = document.getElementById('results');
 
-    if (days.length > 0 && temperatures.length > 0)
+    if (days.length > 0 && temperatures.length > 0 && results_shown)
     {
         div_results.innerHTML = `
             <p>Average Temperature: ${ average(temperatures) }</p>
@@ -48,6 +94,10 @@ function display_results()
         `;
             //<p>Median Temperature: ${ median(temperatures) }</p>
         
+    }
+    else if (!results_shown)
+    {
+        div_results.innerHTML = '';
     }
 }
 
@@ -100,29 +150,4 @@ function median(array)
     }
 
     return array[array.length / 2 - 0.5];
-}
-
-function display_temperatures()
-{
-    const table = document.getElementById('temperature_table');
-
-    if (days.length > 0 && temperatures.length > 0)
-    {
-        table.innerHTML = `
-            <tr>
-                <th>Day</th>
-                <th>Temperature</th>
-            </tr>
-        `;
-
-        for (let i = 0; i < days.length; i++)
-        {
-            table.innerHTML += `
-                <tr>
-                    <td>${ days[i] }</td>
-                    <td class="rightText">${ temperatures[i] }</td>
-                </tr>
-            `;
-        }
-    }
 }
