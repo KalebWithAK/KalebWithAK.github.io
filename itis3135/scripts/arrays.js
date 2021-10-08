@@ -134,6 +134,7 @@ function toggleSalary()
 
 function displaySalary()
 {
+    //:35
     //debug();
     const h2_salaries = document.getElementById("table_heading")
     const div_salaries = document.getElementById("salaries_table");
