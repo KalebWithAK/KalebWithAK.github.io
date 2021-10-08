@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Kaleb Dean, ITIS3135, Weather Report</title>
         <link href="./styles/default.css" rel="stylesheet" type="text/css">
         <link href="./styles/tables.css" rel="stylesheet" type="text/css">
-        <link href="./styles/weather.css" rel="stylesheet" type="text/css">
+        <link href="./styles/arrays.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     </head>
     <body>
         <header> 
             <h1 class="centerText">Kaleb Dean >> ITIS3135</h1> 
         </header> 
-        
         <nav id="top-nav" class="centerText"> 
             <a href="introduction.html">Introduction</a>
             ||
@@ -33,38 +31,44 @@
             ||
             <a href="weather-report.html">Weather Report</a>
             ||
-            <a href="arrays.html">Arrays</a>
+            <a href="arrays.html">Arrays</a>            
         </nav>
 
         <main>
-            <h2 class="centerText">Weather Report</h2>
+            <h2 class="centerText">Arrays</h2>
 
             <form>
                 <div class="inputs">
-                    <label class="centerText" for="select_day">Day</label>
-                        <select id="select_day">
-                            <option value="Sunday">Sunday</option>
-                            <option value="Monday">Monday</option>
-                            <option value="Tuesday">Tuesday</option>
-                            <option value="Wednesday">Wednesday</option>
-                            <option value="Thursday">Thursday</option>
-                            <option value="Friday">Friday</option>
-                            <option value="Saturday">Saturday</option>
+                    <label class="centerText" for="select_employee">Employee</label>
+                        <select id="select_employee">
+                            <option value="" selected>--</option>
+                            <option value="joshua">Joshua</option>
+                            <option value="samara">Samara</option>
+                            <option value="xander">Xander</option>
+                            <option value="collin">Collin</option>
+                            <option value="gabriel">Gabriel</option>
+                            <option value="hrudey">Hrudey</option>
+                            <option value="nick">Nick</option>
+                            <option value="julissa">Julissa</option>
+                            <option value="chanel">Chanel</option>
                         </select>
-                    <label class="centerText" for="text_temperature">Temperature</label>
-                    <input id="text_temperature" type="number" size="10">
+                    <label class="centerText" for="text_salary">Salary</label>
+                    <input id="text_salary" type="number" size="10">
                 </div>
-                <input id="btn_add" type="button" onclick="add_temperature()" value="Add Temperature">
+                <input id="btn_add" type="button" onclick="addSalary()" value="Add Salary">
             </form>
 
             <div class="buttonContainer">
-                <button onclick="display_results()">Results</button>
-                <button onclick="display_temperatures()">Temperatures</button>
+                <button onclick="toggleResults()">Results</button>
+                <button onclick="toggleSalary()">Salaries</button>
             </div>
 
-            <div id=results></div>
+            <div id=results class="hidden centerText"></div>
 
-            <table id="temperature_table"></table>
+            <div id="table_div" class="hidden">
+                <h2 id="table_heading" class="centerText">.</h2>
+                <table id="salaries_table"></table>
+            </div>
         </main>
 
         <footer>
@@ -95,6 +99,6 @@
             </nav>
         </footer>
 
-        <script src="./scripts/weather_report.js"></script>
+        <script src="./scripts/arrays.js"></script>
     </body>
 </html>

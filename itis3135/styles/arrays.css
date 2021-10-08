@@ -1,0 +1,69 @@
+main {
+    padding-bottom: 2em;
+    font-size: 24px;
+}
+
+main > * {
+    width: 15em;
+    margin: auto;
+}
+
+form {
+    border: 1px solid var(--blue);
+    width: 15em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form:nth-child(0) {
+    margin-left: 2em;
+}
+
+table {
+    margin: auto;
+    margin-top: 2em;
+    width: 15em;
+}
+
+button, #btn_add {
+    width: 9.25em;
+    height: 2em;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--blue);
+    font-size: 20px;
+}
+
+.hidden {
+    margin-top: 2.5em;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0.5em;
+}
+
+.inputs > input, select {
+    width: 10em;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.border {
+    border: solid 2px var(--blue);
+}
+
+.marginLeft {
+    margin-left: 1.5em;
+}
+
+#btn_add {
+    align-self: center;
+}

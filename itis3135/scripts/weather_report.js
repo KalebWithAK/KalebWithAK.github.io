@@ -114,30 +114,14 @@ function average(array)
 
 function highest(array)
 {
-    let highest = -999999999;
-    for (let i = 0; i < array.length; i++)
-    {
-        if (array[i] > highest)
-        {
-            highest = array[i];
-        }
-    }
-
-    return highest;
+    array = array.sort();
+    return array[array.length - 1];
 }
 
 function lowest(array)
 {
-    let lowest = 9999999999;
-    for (let i = 0; i < array.length; i++)
-    {
-        if (array[i] < lowest)
-        {
-            lowest = array[i];
-        }
-
-        return lowest;
-    }
+    array = array.sort();
+    return array[0];
 }
 
 function median(array)
