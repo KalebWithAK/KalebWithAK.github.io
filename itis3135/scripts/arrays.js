@@ -32,6 +32,7 @@ function addSalary()
         if (employees[i] === newEmployee)
         {
             found = true;
+            console.log(employees[i]);
             salaries[i] = newSalary;
         }
     }
@@ -40,7 +41,7 @@ function addSalary()
     if (!found)
     {
         employees.push(newEmployee);
-        salaries.push(Number(newSalary));
+        salaries.push(newSalary);
     }
 
     displayResults();
@@ -84,6 +85,8 @@ function displayResults()
 
 function average(array)
 {
+    array = array.map(salary => Number(salary));
+
     let sum = 0;
     for (let i = 0; i < array.length; i++)
     {
@@ -95,26 +98,31 @@ function average(array)
 
 function highest(array)
 {
-    array = array.sort();
-    return array[array.length - 1];
+    const sortedArray = [...array];
+    sortedArray.sort();
+
+    return sortedArray[sortedArray.length - 1];
 }
 
 function lowest(array)
 {
-    array = array.sort();
-    return array[0];
+    const sortedArray = [...array];
+    sortedArray.sort();
+
+    return sortedArray[0];
 }
 
 function median(array)
 {
-    array = array.sort();
-    if (array.length % 2 === 0)
+    const sortedArray = [...array];
+    sortedArray.sort();
+    if (sortedArray.length % 2 === 0)
     {
         // return average of middle two elements of array
-        return average([array[array.length / 2 - 1], array[array.length / 2]]);
+        return average([sortedArray[sortedArray.length / 2 - 1], sortedArray[sortedArray.length / 2]]);
     }
 
-    return array[array.length / 2 - 0.5];
+    return sortedArray[sortedArray.length / 2 - 0.5];
 }
 
 function toggleSalary()
@@ -126,6 +134,7 @@ function toggleSalary()
 
 function displaySalary()
 {
+    //debug();
     const h2_salaries = document.getElementById("table_heading")
     const div_salaries = document.getElementById("salaries_table");
 
@@ -165,4 +174,10 @@ function displaySalary()
             div_salaries.innerHTML = "";
         }
     }
+}
+
+function debug()
+{
+    console.log(employees);
+    console.log(salaries);
 }
