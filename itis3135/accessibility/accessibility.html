@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Kaleb Dean, ITIS3135, Accessibility</title>
+        <link href="accessibility.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <script src="accessibility.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="centerText">Accessibility</h1>
+        </header>
+
+        <table class="border">
+            <caption>A List of Apples</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Honeycrisp</th>
+                    <td>
+                        Honeycrisp is an apple cultivar developed at the 
+                        Minnesota Agricultural Experiment Station's Horticultural 
+                        Research Center at the University of Minnesota, Twin Cities. 
+                        Also the best kind of apple in my opinion.</td>
+                    <td><img src="images/honeycrisp-wikipedia.jpg" alt="honeycrisp apple"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Gala</th>
+                    <td>
+                        Gala is a clonally propagated apple cultivar with a mild and 
+                        sweet flavour. In 2018, it surpassed Red Delicious as the apple 
+                        cultivar with the highest production in the United States, 
+                        according to the US Apple Association. It was the first time 
+                        in over 50 years that any cultivar was produced more than Red 
+                        Delicious.
+                    </td>
+                    <td><img src="images/gala-wikipedia.jpg" alt="gala apple"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Granny Smith</th>
+                    <td>
+                        The Granny Smith is a tip-bearing apple cultivar which 
+                        originated in Australia in 1868. It is named after Maria Ann 
+                        Smith, who propagated the cultivar from a chance seedling. The 
+                        tree is thought to be a hybrid of Malus sylvestris, the 
+                        European wild apple, with the domesticated apple Malus 
+                        domestica as the polleniser.
+                    </td>
+                    <td><img src="images/grannySmith-target.jpg" alt="granny smith"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Red Delicious</th>
+                    <td>
+                        The 'Red Delicious' is a clone of apple cultigen, now 
+                        comprising more than 50 cultivars, first recognized in 
+                        Madison County, Iowa, in 1872. It is one of the fifteen most 
+                        popular apple cultivars in the United States. From 1968 to 
+                        2018, it was the most produced cultivar in the U.S. Also the
+                        worst kind of apple in my opinion.
+                    </td>
+                    <td><img src="images/redDelicious-wikipedia.jpg" alt="red delicious"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p id="instructions">Please enter your name and phone number then submit.</p>
+        <form class="border" action="#">
+            <label class="name" for="name">Name</label>
+            <input id="name" class="name" type="text" required>
+            <label class="phone" for="phone">Phone number</label>
+            <input class="phone" id="phone" type="tel" oninput="formatPhoneNumber(this.value)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <input id="btn-submit" type="submit" value="Submit">
+        </form>
+
+        <footer>
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img src="../images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="../images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+            </a>
+        </footer>
+    </body>
+</html>

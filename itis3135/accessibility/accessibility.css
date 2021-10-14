@@ -1,0 +1,109 @@
+:root {
+    --white: #f4f1de;
+    --orange: #e07a5f;
+    --blue: #3d405b;
+    --green: #81b29a;
+    --tan: #f2cc8f;
+}
+
+body {
+    font-size: 18px;
+    font-family: Roboto;
+    color: var(--blue);
+    background-color: var(--white);
+}
+
+table {
+    width: 700px;
+    margin: auto;
+    border-collapse: collapse;
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+
+/*th {
+    background-color: var(--green);
+    color: var(--blue);
+}*/
+
+td {
+    background-color: var(--tan);
+    max-width: 300px;
+}
+
+th, td {
+    border: 1px solid var(--blue);
+    padding: .2em 1em .2em .5em;
+    text-align: left;
+    vertical-align: middle;
+}
+
+tbody tr:nth-child(odd) td {
+    background-color: var(--orange);
+}
+
+form {
+    font-size: 22px;
+    width: 400px;
+    margin: auto;
+    display: grid;
+    gap: 5px;
+    align-items: center;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    background-color: var(--tan);
+}
+
+input {
+    width: 200px;
+    font-size: 20px;
+    color: var(--blue);
+    justify-self: right;
+    background-color: var(--green);
+}
+
+input:focus {
+    border: var(--orange) solid 2px;
+}
+
+label {
+    color: var(--orange);
+}
+
+footer {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.border {
+    
+    border: 3px solid var(--blue);
+}
+
+.name{
+    grid-row: 1;
+}
+
+.phone {
+    grid-row: 2;
+}
+
+#btn-submit {
+    grid-column: 1 / 3;
+    width: 135px;
+    height: 35px;
+    justify-self: center;
+    font-size: 22px;
+}
+
+#instructions {
+    font-size: 22px;
+    width: 400px;
+    margin: auto;
+}
