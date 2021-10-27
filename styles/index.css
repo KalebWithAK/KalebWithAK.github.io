@@ -1,0 +1,59 @@
+:root {
+    --white: #e8e9f3;
+    --red: #e03616;
+    --blue: #548687;
+    --black: #262635;
+    --purple: #662c91;
+}
+
+body {
+    background: linear-gradient(90deg, var(--white), var(--blue));
+    color: var(--black);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Kanit;
+    font-size: 24px;
+    text-shadow: 3px 3px 3px var(--blue);
+}
+
+main {
+    min-height: 28em;
+    background-color: var(--blue);
+    color: var(--white);
+    font-family: Roboto;
+    font-size: 20px;
+    padding-top: 1em;
+    margin-top: 1em;
+}
+
+footer {
+    background-color: var(--white);
+}
+
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+ul {
+    width: 30em;
+    margin: auto;
+}
+
+a:hover {
+    color: var(--red);
+    text-decoration: underline;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+.centerText {
+    text-align: center;
+}
