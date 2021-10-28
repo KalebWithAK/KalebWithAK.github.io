@@ -41,4 +41,5 @@ footer {
     display: grid;
     grid-template-columns: 20px 100px;
     justify-content: start;
+    align-items: center;
 }
