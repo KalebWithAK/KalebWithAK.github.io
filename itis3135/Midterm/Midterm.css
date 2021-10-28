@@ -39,6 +39,6 @@ footer {
 /*add styles*/
 #chooseDay {
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 20px 100px;
     justify-content: start;
 }

@@ -19,6 +19,7 @@ nav {
 }
 
 main {
+    min-height: 17em;
     background: linear-gradient(var(--white), var(--yellow));
     padding: 10px 0;
     border-radius: 25px;
