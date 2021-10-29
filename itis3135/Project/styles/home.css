@@ -1,0 +1,12 @@
+strong {
+    color: var(--pink);
+}
+
+main > img {
+    width: 100%;
+    height: 20em;
+}
+
+.container-card {
+    justify-content: space-between;
+}

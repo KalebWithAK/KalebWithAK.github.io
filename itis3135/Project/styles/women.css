@@ -1,0 +1,14 @@
+main > img {
+    width: 50em;
+    height: 20em;
+}
+
+
+
+
+.container-card {
+    width: 50em;
+    height: 10em;
+    margin: 2em 0;
+    background-color: var(--pink);
+}

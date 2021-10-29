@@ -1,0 +1,9 @@
+.container-card {
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+}
+
+.card {
+    height: 7em;
+}
