@@ -3,8 +3,9 @@ main > img {
     height: 20em;
 }
 
-
-
+h3 {
+    color: var(--purple);
+}
 
 .container-card {
     width: 50em;

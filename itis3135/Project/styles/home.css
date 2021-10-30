@@ -10,3 +10,11 @@ main > img {
 .container-card {
     justify-content: space-between;
 }
+
+.card {
+    font-size: 30px;
+    height: 3em;
+}
+.card:hover {
+    height: 4em;
+}
