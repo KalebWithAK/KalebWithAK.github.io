@@ -3,6 +3,10 @@ main > img {
     height: 20em;
 }
 
+h2 {
+    margin-top: 3em;
+}
+
 h3 {
     color: var(--purple);
 }
