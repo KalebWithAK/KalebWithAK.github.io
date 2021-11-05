@@ -13,8 +13,13 @@ main > img {
 
 .card {
     font-size: 30px;
+    width: 12em;
     height: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .card:hover {
-    height: 5em;
+    height: auto;
 }

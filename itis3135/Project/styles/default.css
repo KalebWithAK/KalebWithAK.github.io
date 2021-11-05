@@ -76,16 +76,16 @@ img {
 .card {
     width: 10em;
     height: 3em;
-    background-color: var(--lightGray);
     text-decoration: none;
     text-align: center;
+    border: solid var(--purple) 3px;
     border-radius: 1em;
     color: var(--pink);
 }
-.card:hover {
+/*.card:hover {
     text-decoration: none;
     height: 8em;
-}
+}*/
 
 #nav-selected {
     color: var(--purple);

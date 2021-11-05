@@ -1,17 +1,22 @@
 let cards = [];
 
-window.onload = () => {
-    cards = [...document.getElementsByClassName('card')];
-    cards.map(i => {
-        i.addEventListener('mouseenter', cardExpand);
-        i.addEventListener('mouseleave', cardShrink);
-    });
-}
+$(document).ready(() => {
+    $('.card').hover(cardExpand, cardShrink);
+});
 
+// add some text, increase card height
 function cardExpand() {
-    this.innerHTML = 'Come check out our ' + this.innerHTML.match(/<strong>(\w+\s\w+\s\w+|\w+)<\/strong>/)[0];
+    $(this).finish();
+    
+    $(this).animate({ height: '5em' }, 200);
+    $(this).children()[0].before('Come check out our')//.fadeOut(200, () => ).fadeIn(200);
+    //
 }
 
+// remove some text, reduce card height
 function cardShrink() {
-    this.innerHTML = this.innerHTML.match(/<strong>(\w+\s\w+\s\w+|\w+)<\/strong>/)[0];
+    $(this).finish();
+    const strong = $(this).children()[0];
+    $(this).animate({ height: '3em' }, 200)//.fadeOut(200, () => ).fadeIn(200);
+    $(this).text('').append(strong);
 }
