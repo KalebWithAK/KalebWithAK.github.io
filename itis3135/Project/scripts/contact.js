@@ -28,7 +28,6 @@ $(document).ready(() => {
     });
 
     const email = $('#emailAddress').detach();
-    console.log(email);
     $('#email').hover(() => {
         $('#email').animate({ height: '5em', width: '16em' });
         $('#email').append(email);

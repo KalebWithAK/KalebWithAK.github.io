@@ -1,12 +1,11 @@
 const upcoming = [];
 const past = [];
 
-console.log(new Date() < new Date('Dec 16 2021'));
 $(document).ready(() => {
     $('main').tabs();
 
     // request all events
-    $.get('./json/events.json', (data) => {
+    /*$.get('./json/events.json', (data) => {
         const events = JSON.parse(data);
 
         sortEvents(events);
@@ -14,19 +13,17 @@ $(document).ready(() => {
         for (let i = 0; i < upcoming.length; i++) {
             displayEvent(past[i], '#upcoming-events');
         }
+        if (upcoming.length === 0) {
+            $('#upcoming-events').html('<p>No upcoming events</p>');
+        }
 
         for (let i = 0; i < past.length; i++) {
             displayEvent(past[i], '#past-events');
         }
-
         if (past.length === 0) {
             $('#past-events').html('<p>No past events</p>');
-        }
-        console.log(upcoming.length)
-        if (upcoming.length === 0) {
-            $('#upcoming-events').html('<p>No upcoming events</p>');
-        }
-    });
+        }        
+    });*/
 });
 
 // sort events between upcoming and past events
@@ -38,9 +35,7 @@ function sortEvents(events) {
         else {
             past.push(events[i]);
         }
-    }
-
-    console.log(past);
+    } 
 }
 
 function displayEvent(event, div) {

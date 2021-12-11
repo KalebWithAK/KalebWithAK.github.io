@@ -1,10 +1,8 @@
 $(document).ready(() => {
-    $('#container-eBoard').bxSlider();
+    //$('#container-eBoard').bxSlider();
 
     $.get('./json/women.json', (data) => {
         const { eBoard } = JSON.parse(data);
-
-        console.log(eBoard);
 
         for (let i = 0; i < eBoard.length; i++) {
             displayBio(eBoard[i], '#container-eBoard');

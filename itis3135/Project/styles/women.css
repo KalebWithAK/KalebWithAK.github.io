@@ -6,6 +6,7 @@ main img {
 
 h2 {
     margin-top: 3em;
+    text-align: center;
 }
 
 h3 {
@@ -17,8 +18,12 @@ h3 {
     height: 10em;
     margin: 2em 0;
     background-color: var(--pink);*/
-    gap: 3em;
-    min-height: 3em;
+    width: 39em;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
 }
 .card {
     height: auto;
