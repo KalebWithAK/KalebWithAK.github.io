@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link href="./styles/events.css" rel="stylesheet" type="text/css">
         <link href="./styles/default.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="./styles/events.css" rel="stylesheet" type="text/css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" type="text/css">
+
+        <link href="jquery-ui/jquery-ui.css" rel="stylesheet" type="text/css">
+        <link href="jquery-ui/jquery-ui.structure.css" rel="stylesheet" type="text/css">
+        <link href="jquery-ui/jquery-ui.theme.css" rel="stylesheet" type="text/css">
+
+
         <title>100BW UNCC | Events</title>
+
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+        <script src="./jquery-ui/jquery-ui.js"></script>
+
+        <script src="./scripts/events.js"></script>
     </head>
     <body>
         <header>
@@ -28,15 +40,14 @@
         </nav>
 
         <main>
-            <article>
-                <h2>Upcoming Events</h2>
-
-            </article>
-
-            <article>
-                <h2>Past Events</h2>
-                
-            </article>
+            <ul>
+                <li><a href="#upcoming-events">Upcoming Events</a></li>
+                <li><a href="#past-events">Past Events</a></li>
+            </ul>
+            <div id="upcoming-events" class="card-container">
+            </div>
+            <div id="past-events" class="card-container">
+            </div>
         </main>
 
         <footer>

@@ -27,7 +27,6 @@ h1 {
 }
 
 h2 {
-    text-align: center;
     color: var(--purple);
 }
 
@@ -52,7 +51,7 @@ a:hover {
 }
 
 main {
-    width: 50em;
+    width: 54em;
     margin: auto;
     min-height: 23em;
 }

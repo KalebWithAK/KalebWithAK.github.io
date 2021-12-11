@@ -1,0 +1,24 @@
+{
+    "eBoard": [
+        { 
+            "name": "Samara Denise Williams",
+            "image": "./images/members/samaraDeniseWilliams.jpg"
+        },
+        {
+            "name": "Myla Cunningham",
+            "image": "./images/members/mylaCunningham.jpeg"
+        },
+        {
+            "name": "Genesis Chandler",
+            "image": "./images/members/genesisChandler.jpeg"
+        },
+        {
+            "name": "Kira Hart-Simpson",
+            "image": "./images/members/kiraHartSimpson.jpeg"
+        },
+        {
+            "name": "Shelby Jackson",
+            "image": "./images/members/shelbyJackson.jpeg"
+        }
+    ]
+}

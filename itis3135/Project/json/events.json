@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Trunk or Treat Pop-Up Shop",
+        "date": "Oct 26 2021",
+        "time": { "start": "6:30 PM", "end": "9:30 PM" },
+        "location": { "name": "Afterhours Cone Center", "address": "" },
+        "image": "trunkOrTreat.png"
+    },
+    {
+        "name": "Thankful Thursday",
+        "date": "Nov 18 2021",
+        "time": { "start": "6:00 PM", "end": "7:30 PM" },
+        "location": { "name": "Cone Center", "address": "COED 165" },
+        "image": "thankfulThursday.png"
+    },
+    {
+        "name": "Let's Talk Professional",
+        "date": "Nov 19 2021",
+        "time": { "start": "5:30 PM", "end": "6:30 PM" },
+        "location": { "name": "", "address": "" },
+        "image": "letsTalkProfessional.png"
+    },
+    {
+        "name": "Eat to support 100 Black Women",
+        "date": "Nov 22 2021",
+        "time": { "start": "4:00 PM", "end": "9:00 PM" },
+        "location": { "name": "Blaze Pizza", "address": "8948 J M Keynes Dr Suite 400, Charlotte, NC 28262" },
+        "image": "eatToSupport.png"
+    }
+]

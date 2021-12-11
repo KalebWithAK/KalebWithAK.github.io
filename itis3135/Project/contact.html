@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link href="./styles/contact.css" rel="stylesheet" type="text/css">
         <link href="./styles/default.css" rel="stylesheet" type="text/css">
+        <link href="./styles/contact.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <title>100BW UNCC | Contact</title>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./scripts/contact.js"></script>
     </head>
     <body>
         <header>
@@ -32,16 +33,22 @@
             <h3>Reach out in one of the following ways</h3>
 
             <section class="container-card">
-                <a class="card" href="https://www.instagram.com/100bw_uncc/" target="_blank">
+                <a id="instagram" class="card" href="https://www.instagram.com/100bw_uncc/" target="_blank">
                     Follow our instagram
+                    <img id='instaIcon' src='images/icons/instagram-wikimedia.jpg'>
+                    <p id="ig">@100bw_uncc</p>
                 </a>
 
-                <a class="card" href="https://ninerengage.uncc.edu/organization/100-black-women" target="_blank">
+                <a id="ninerengage" class="card" href="https://ninerengage.uncc.edu/organization/100-black-women" target="_blank">
                     Check us out on ninerengage
+
+                    <img id="ninerengageIcon" src='images/icons/ninerengage.png'>
                 </a>
 
-                <div class="card">
+                <div id="email" class="card">
                     Email us
+
+                    <p id='emailAddress'>100bwuncc@gmail.com</p>
                 </div>
             </section>
         </main>

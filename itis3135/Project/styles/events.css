@@ -1,5 +1,29 @@
-main {
+/*main {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}*/
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.25em;
 }
 
+.card {
+    height: 16em;
+    width: 16em;
+}
+
+.card > img {
+    margin: auto;
+    padding-top: 0.25em;
+    border-radius: 0.5em;
+}
+
+.ui-tabs .ui-tabs-nav {
+    background: var(--purple);
+}
+
+.ui-tabs .ui-tabs-panel {
+    background: black;
+}
